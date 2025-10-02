@@ -36,10 +36,12 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Surface(color = Color.Green,modifier = modifier.padding(24.dp)) {
+    Surface(
+        color = Color.Green,
+        modifier = modifier.padding(24.dp)
+    ) {
         Text(
             text = "Olá mundo!! Meu nome é $name!\nPrimeiro app em Kotlin!!",
-            modifier = modifier.padding(16.dp)
         )
     }
 }
